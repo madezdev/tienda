@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "../itemList/ItemList";
 
+
 export const ItemListContainer = () => {
 
   const [productos, setproductos] = useState([]);
@@ -40,6 +41,7 @@ export const ItemListContainer = () => {
 
   return (
     <div className="productos productos__contenedor">
+      <h1 className="productos__titulo">Lista de productos</h1>
       <div className="productos__grid"> { productos } </div>
     </div>
   );
