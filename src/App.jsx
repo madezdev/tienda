@@ -4,7 +4,15 @@ import { ItemDetailContainer } from "./components/itemDetailContainer/ItemDetail
 import { ItemListContainer } from "./components/itemListContainer/ItemListContainer";
 import { Cart } from "./components/cart/Cart"
 
+import { getProductos } from "./firebase/firebase";
+
+
+
 export const App = () => {
+
+  // cargarBDD()
+     getProductos()
+
   return (
 
    <>
@@ -13,7 +21,6 @@ export const App = () => {
         <Header/>
 
         <Routes>
-
           <Route path="/" element = { <ItemListContainer/> } />
           <Route path="/item/:id" element = { <ItemDetailContainer/> }/>
           <Route path="/category/:idCategoria" element = { <ItemListContainer/> }/>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "../itemList/ItemList";
+import { getProductos } from "../../firebase/firebase"; 
 
-
+//consulta una base de datos y envia a otro componente que se encarga de listar
+//muestra todos los productos
 export const ItemListContainer = () => {
 
   const [productos, setproductos] = useState([]);
@@ -12,25 +14,24 @@ export const ItemListContainer = () => {
 
     if (idCategoria) {
 
-      fetch('../json/productos.json')
-        .then((res) => res.json())
-        .then((items) => {
+        
+       getProductos()
+        .then(items => {
 
           const products = items.filter(
-            (prod) => prod.idCategoria === (idCategoria));
+            prod => prod.idCategoria === (idCategoria));
 
-          const productList = ItemList({ products });
+          const productList = <ItemList products={products} plantilla={'item'}/>;
           setproductos(productList);
 
         });
 
     }else{
 
-      fetch('/json/productos.json')
-        .then((res) => res.json())
-        .then((products) => {
+        getProductos()
+        .then(products => {
 
-          const productList = ItemList({ products });
+          const productList = <ItemList products={products} plantilla={'item'}/>;
           setproductos(productList);
 
         });

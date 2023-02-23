@@ -1,17 +1,17 @@
-import { Item } from "../item/Item"
+import { Item } from "../item/Item";
+import { ItemCart } from "../ItemCart/ItemCart";
 
-
-export const ItemList = ( { products, plantilla } ) => {
-  
+//Recibe como propiedad un array de productos y retorna un jsx
+export const ItemList = ({ products, plantilla }) => {
   return (
-    
     <>
-      
-        
-        {products.map( producto  =>  <Item item = { producto } key={producto.id}/>  ) }
-       
+      {
+        plantilla === "item"
+        ? 
+        products.map(producto => <Item item={producto} key={producto.id}/>)
+        : 
+        products.map(producto => <ItemCart item={producto} key={producto.id}/>)
+      }
     </>
-
-
-  )
-}
+  );
+};

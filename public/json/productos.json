@@ -8,7 +8,7 @@
       "descripcion": "Disfrutá con esta guitarra Stagg de la conexión con la música. Con este instrumento descubrirás nuevos acordes, entonarás tus canciones y disfrutarás de la vida musical. Explorá, amplificá tu creatividad y desarrollá tu pasión.",
       "precio": 126575,
       "stock": 2,
-      "img": "guitarra_10.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_01.jpg?alt=media&token=b8e4ed00-5097-49f9-ada9-a68448cb5a87"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "descripcion": "Disfrutá con esta guitarra PRS SE de la conexión con la música. Con este instrumento descubrirás nuevos acordes, entonarás tus canciones y disfrutarás de la vida musical. Explorá, amplificá tu creatividad y desarrollá tu pasión",
       "precio": 573500,
       "stock": 10,
-      "img": "guitarra_02.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_02.jpg?alt=media&token=18b048f7-a169-4085-a51f-37f4fd5d49a8"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "descripcion": "Cuerpo de caoba con tapa de Arce rizado, afinación estándar . Mástil de arce con Ultra Access y unión encolada. . Pastillas activas EMG 81/85 comandadas por un control de tono, dos de volumen y un selector de tres posiciones..",
       "precio": 514020,
       "stock": 3,
-      "img": "guitarra_03.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_03.jpg?alt=media&token=215efdda-db70-49d4-962c-11bf8a0fd856"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "descripcion": "Cuerpo de caoba y mástil de caoba en tres piezas con Ultra Access y unión encolada. Escala de 25,5 y diapasón de ébano con 24 trastes extra jumbo con marcación de Calavera Puerta del infierno de madreperla en el 12º traste. Cejuela Floyd Rose R2 de 41.3mm. Binding negro múltiple en cuerpo, mástil y pala",
       "precio": 564020,
       "stock": 1,
-      "img": "guitarra_04.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_04.jpg?alt=media&token=eea05937-c83c-4511-915b-ad87704cc5a6"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "descripcion": "Un cuerpo delgado y compacto unido a un cuello de perfil ultra-delgado. Combina el rico y potente sonido de las dos astillas Hagstrom Custom 62. El tono es verdaderamente ultra-licious, tanto en el modo de doble bobinado y en el modo bobina-split para los sonidos de bobina simple.",
       "precio": 514020,
       "stock": 4,
-      "img": "guitarra_05.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_05.jpg?alt=media&token=669e413f-23bd-40e3-a712-ce09bc9c9d7a"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "descripcion": "Material versátil su madera de tilo tiene una densidad media lo que proporciona un tono suave con medios enfatizados.",
       "precio": 55012,
       "stock": 25,
-      "img": "guitarra_06.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_06.jpg?alt=media&token=2fa26df9-97fb-4750-a5ab-8cf1f25c344a"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "descripcion": "Su madera de álamo la convierte en uno de los modelos más accesibles y al mismo tiempo, ofrece facilidad para trabajar",
       "precio": 120940,
       "stock": 25,
-      "img": "guitarra_07.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_07.jpg?alt=media&token=308c6d3f-ae06-49fa-84ff-99195c0d3626"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "descripcion": "Esta guitarra SG es una variación de la Les Pauls que popularizó Angus Young de AC/DC. A diferencia de la Les Paul y Stratocaster, es bastante ligera de peso, con menos graves, pero muy dinámica y viva, lo que la hace perfecta para el blues y el rock.",
       "precio": 325879,
       "stock": 3,
-      "img": "guitarra_08.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_08.jpg?alt=media&token=865ec8db-6f49-4df1-b2d7-cb088a83c1b6"
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "descripcion": "Disfrutá con esta guitarra Danelectro 1959 Guitars de la conexión con la música. Con este instrumento descubrirás nuevos acordes, entonarás tus canciones y disfrutarás de la vida musical. Explorá, amplificá tu creatividad y desarrollá tu pasión.",
       "precio": 186833,
       "stock": 0,
-      "img": "guitarra_09.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_09.jpg?alt=media&token=a13f67c8-34da-493d-8faa-14940b40945a"
     },
     {
       "id": 10,
@@ -98,7 +98,7 @@
       "descripcion": "Esta Les Paul cuenta con pastillas, tono independiente y controles de volumen para cada elemento, lo que produce distintos resultados. El punto fuerte en su sonido es ser distorsionado, denso, contundente, potente y redondo. ",
       "precio": 1685048,
       "stock": 1,
-      "img": "guitarra_10.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_10.jpg?alt=media&token=7840b449-d30b-43cd-b48e-b0dd803d2c19"
     },
     {
       "id":11,
@@ -108,7 +108,7 @@
       "descripcion": "Esta Les Paul cuenta con pastillas, tono independiente y controles de volumen para cada elemento, lo que produce distintos resultados. El punto fuerte en su sonido es ser distorsionado, denso, contundente, potente y redondo. Es ideal para el rock sureño, rock de los 70, blues, jazz, heavy metal y punk.",
       "precio": 52079,
       "stock": 18,
-      "img": "guitarra_11.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_11.jpg?alt=media&token=31a56a70-b0c8-4c13-b60c-323a219e70d2"
     },
     {
       "id": 12,
@@ -118,7 +118,7 @@
       "descripcion": "Epiphone fabrica instrumentos para todos los estilos de música popular, con espíritu pionero y de invención. El valor de sus productos resalta por su calidad e innovación.",
       "precio": 314631,
       "stock": 8,
-      "img": "guitarra_12.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_12.jpg?alt=media&token=700d8f67-3de0-4d47-966b-fdb55ac30ec0"
     },
     {
       "id": 13,
@@ -128,7 +128,7 @@
       "descripcion": "Disfrutá con esta guitarra Midiplus de la conexión con la música. Está diseñada para aficionados y profesionales. Con este instrumento descubrirás nuevos acordes, entonarás tus canciones y disfrutarás de la vida musical.",
       "precio": 15094,
       "stock": 15,
-      "img": "guitarra_13.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_13.png?alt=media&token=8ec61efe-09cb-469c-b203-ddd68579f45f"
     },
     {
       "id": 14,
@@ -138,7 +138,7 @@
       "descripcion": "Tipo de cuerpo Concierto, Mástil de caoba, Tapa de Abeto de cedro rojo occidental de madera maciza, fondo y aros de Ovangkol con acabado Brillo natural",
       "precio": 447897,
       "stock": 2,
-      "img": "guitarra_14.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_14.png?alt=media&token=3afe2a5a-3191-44e0-b757-d402a52bea5a"
     },
     {
       "id": 15,
@@ -148,7 +148,7 @@
       "descripcion": "Con un toque artesanal único plasmado en sus materiales, Gracia acompaña a la historia musical desde el año 1870. Sus guitarras poseen alcance internacional y son utilizadas tantos por principiantes como por grandes referentes de la música.",
       "precio": 48749,
       "stock": 22,
-      "img": "guitarra_15.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_15.png?alt=media&token=25f39e97-9f3f-401b-8b80-7dbb9dcd9f90"
     },
     {
       "id": 16,
@@ -158,7 +158,7 @@
       "descripcion": "Con un toque artesanal único plasmado en sus materiales, Gracia acompaña a la historia musical desde el año 1870. Sus guitarras poseen alcance internacional y son utilizadas tantos por principiantes como por grandes referentes de la música.",
       "precio": 15094,
       "stock": 44,
-      "img": "guitarra_16.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_16.png?alt=media&token=255cf40c-f3c7-4d13-b1c2-8ab3aa614210"
     },
     {
       "id": 17,
@@ -168,7 +168,7 @@
       "descripcion": "Esta opción totalmente de caoba ofrece un tono distintivo que es dulce y suave, pero potente y dinámico en todas las frecuencias. La tapa de caoba sólida proporciona una gran proyección y claridad que solo mejorará a medida que envejezca. ",
       "precio": 240021,
       "stock": 6,
-      "img": "guitarra_17.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_17.png?alt=media&token=2d497155-7146-4c1a-8ec9-8bfc71a4f601"
     },
     {
       "id": 18,
@@ -178,7 +178,7 @@
       "descripcion": "Fender es una empresa que transforma la música en todo el mundo y atraviesa una gran variedad de géneros. Es el mayor fabricante internacional y sus productos representan un ícono cultural.",
       "precio": 333668,
       "stock": 1,
-      "img": "guitarra_18.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/guitarra_18.png?alt=media&token=c07ab359-6143-4bf0-b873-d7820e9bd914"
     },
     {
       "id": 19,
@@ -188,7 +188,7 @@
       "descripcion": "Si lo que estás buscando es un equipo más ligero, resistente y potente, este amplificador de tipo transistor es ideal para vos.",
       "precio": 21079,
       "stock": 10,
-      "img": "amplificador_01.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/amplificador_01.png?alt=media&token=3a188cce-2ea0-4d71-9357-1ed9077650db"
     },
     {
       "id": 20,
@@ -198,7 +198,7 @@
       "descripcion": "Este amplificador cuenta con un conector de entrada tipo Jack 1/4 lo que te asegurará tener buena calidad cuando hagas una grabación o una transmisión. El conector de salida Jack 3.5 mm es el clásico, el de los auriculares de toda la vida, y es sin duda perfecto para todo dispositivo portátil que uses.",
       "precio": 128074,
       "stock": 4,
-      "img": "amplificador_02.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/amplificador_02.png?alt=media&token=6c818b66-a866-441a-a930-e727cd617172"
     },
     {
       "id": 21,
@@ -208,7 +208,7 @@
       "descripcion": "Fender no para de crecer, continúa creando nuevos productos con sus diseños originales, característicos de la marca. Además, todos sus instrumentos son fabricados bajo altos estándares de calidad, lo que los mantiene como líderes en el mercado musical. ",
       "precio": 143874,
       "stock": 2,
-      "img": "amplificador_03.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/amplificador_03.png?alt=media&token=13299599-00c6-485a-9566-2e7c8ebd0c9c"
     },
     {
       "id": 22,
@@ -218,7 +218,7 @@
       "descripcion": "Las cuerdas de para guitarra criolla Classic EJ27H de D'Addario son ideales para principiantes, estudiantes y profesionales por igual. Este set de tensión alta contiene 3 cuerdas de nailon transparentes y 3 de cobre entorchado en plata para un balance óptimo de tono cálido y sobresaliente, de larga duración.",
       "precio": 4599,
       "stock": 2,
-      "img": "cuerda_01.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/cuerda_01.png?alt=media&token=50de0aa1-2b5a-4bc4-8445-41619fa9cdeb"
     },
     {
       "id": 23,
@@ -228,7 +228,7 @@
       "descripcion": "Las cuerdas como diseñan sus guitarras, con el máximo rendimiento, tono exacto y capacidad de interpretación en mente. Saben que los músicos demandan cuerdas que tocarán en el escenario, en el estudio o donde sea que su música los lleve.",
       "precio": 3599,
       "stock": 22,
-      "img": "cuerda_02.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/cuerda_02.png?alt=media&token=3c4226af-1e78-4d4c-9a7c-5fb6f3494f80"
     },
     {
       "id": 24,
@@ -238,7 +238,7 @@
       "descripcion": "Las cuerdas GK para guitarra eléctrica están elaboradas con materiales de primera calidad, lo que asegura una cuerda de prolongada duración y sonoridad, con flexibilidad y afinación perfecta.",
       "precio": 3599,
       "stock": 10,
-      "img": "cuerda_03.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/tienda-coder-7b231.appspot.com/o/cuerda_03.png?alt=media&token=34d65f5b-6710-4bef-bf47-65989f638856"
     }
   ]
   

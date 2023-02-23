@@ -2,17 +2,19 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../itemDetail/ItemDetail";
 
+//Consulta de la base de dato un producto por id y lo envia 
+//Se muestra el detalle de un producto 
 export const ItemDetailContainer = () => {
   
-  const [producto, setProducto] = useState([]);
-  const {id} = useParams();
+  const [ producto, setProducto ] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
 
     fetch("../json/productos.json")
-      .then((res) => res.json())
-      .then((products) => {
-        const item = products.find((prod) => prod.id === parseInt(id));
+      .then( res => res.json())
+      .then( products => {
+        const item = products.find(prod => prod.id === parseInt(id));
         setProducto(item);
       });
 
@@ -21,7 +23,7 @@ export const ItemDetailContainer = () => {
   return (
 
     <main className="contenedor">
-
+      
       <ItemDetail item = { producto } />
 
     </main>
