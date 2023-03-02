@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../itemDetail/ItemDetail";
+import { getProducto } from "../../firebase/firebase";
 
 //Consulta de la base de dato un producto por id y lo envia 
 //Se muestra el detalle de un producto 
@@ -11,10 +12,8 @@ export const ItemDetailContainer = () => {
 
   useEffect(() => {
 
-    fetch("../json/productos.json")
-      .then( res => res.json())
-      .then( products => {
-        const item = products.find(prod => prod.id === parseInt(id));
+      getProducto(id)
+      .then( item => {
         setProducto(item);
       });
 

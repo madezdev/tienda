@@ -2,6 +2,7 @@ import { ItemCount } from "../itemCount/ItemCount";
 
 //Plantilla del producto
 export const ItemDetail = ({ item }) => {
+  
   const onAdd = (cantidad) => {
     console.log(cantidad);
   };

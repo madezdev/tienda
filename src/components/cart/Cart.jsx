@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { ItemList } from "../itemList/ItemList";
+import '../../styles/cart.css'
+
 
 export const Cart = () => {
+  
   const carrito = [
     {
       id: 1,
@@ -33,34 +36,45 @@ export const Cart = () => {
     <>
       {carrito.length === 0 ? (
         <>
-          <div className="contenedor">
-            <h2 className="heading">Carrito de compras vacio</h2>
-            <Link className="carrito__comprar" to={"/"}>
+          <div className="cart__contenedor">
+            <h2 className="cart__heading">Carrito de compras vacio</h2>
+            <Link className="cart__continuar--btn" to={"/"}>
               Continuar comprando
             </Link>
           </div>
         </>
       ) : (
-        <div className="contenedor">
-          <h2 className="heading">Carrito de compras</h2>
+        <div className="cart__contenedor">
+          <h2 className="cart__heading">Carrito de compras</h2>
 
-          <div className="contenido">
+          <div className="cart__contenido">
             <div className="">
-              <p>Resumen de compra</p>
-              
+              <p className="cart__textoResumen">Resumen de compra</p>
+            <hr className="cart__line"/>
               <ItemList products={carrito} plantilla={'itemCart'}/>
-
+            <hr className="cart__line"/>
             </div>
 
-            <aside className="resumen">
-              <p>Total a pagar: precio total</p>
-              <button>Vaciar carrito</button>
-              <Link to={"/"}>
-                <button>Continuar comprando</button>
-              </Link>
+            <aside className="cart__resumen">
+
+              <p className="cart__total">Total a pagar: <span className="cart__totalBolt">$2.000</span></p>
+
+            <div className="cart__botones">
+             
               <Link to={"/checkout"}>
-                <button>Finalizar compra</button>
+                <button className="cart__btnFinalizar btn">Finalizar compra</button>
               </Link>
+
+              <Link to={"/"}>
+                <button className="cart__btnContinuar btn">Continuar comprando</button>
+              </Link>
+
+              <Link to={"/"}>
+              <button className="cart__btnVaciar btn">Vaciar carrito</button>
+              </Link>
+
+            </div>
+            
             </aside>
           </div>
         </div>

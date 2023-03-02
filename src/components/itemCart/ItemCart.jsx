@@ -1,33 +1,34 @@
 
 export const ItemCart = ({ item }) => {
- 
+
   return (
-    <div className="contenedor__cart">
-      <div className="card_img">
+    <div className="itemCart__contenedor">
+      <div className="itemCart__contenedorImg">
         <img
-          
           src={item.img}
           alt={`Imagen de producto ${item.nombre}`}
-          className="img__cart"
+          className="itemCart__img"
         />
       </div>
 
-      <div className="card__body">
-        <h5 className="card__title">{item.nombre}</h5>
-        <p className="card__text"> Cantidad: {item.cantidad} </p>
-        <p className="card__text">
+      <div className="itemCart__body">
+        <h5 className="itemCart__nombre">{item.nombre}</h5>
+        <p className="itemCart__cant"> Cantidad: {item.cantidad} </p>
+        <p className="itemCart__precio">
           {" "}
           Precio Unitario: ${new Intl.NumberFormat("de-DE").format(item.precio)}
         </p>
-        <p className="card__text">
+        <p className="itemCart__subtotal">
           Subtotal: $
           {new Intl.NumberFormat("de-DE").format(item.precio * item.cantidad)}
         </p>
-      </div>
-
-      <button className="card__btn" onClick={() => "Borrar producto"}>
+      <button
+        className="itemCart__btnEliminar"
+        onClick={() => "Borrar producto"}>
         Eliminar del Carrito
       </button>
+      </div>
+
     </div>
   );
 };

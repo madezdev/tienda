@@ -12,31 +12,12 @@ export const ItemListContainer = () => {
 
   useEffect(() => {
 
-    if (idCategoria) {
+     getProductos(idCategoria)
+    .then(products => {
+      const productList = <ItemList products={products} plantilla={'item'}/>;
+      setproductos(productList);
+    });
 
-        
-       getProductos()
-        .then(items => {
-
-          const products = items.filter(
-            prod => prod.idCategoria === (idCategoria));
-
-          const productList = <ItemList products={products} plantilla={'item'}/>;
-          setproductos(productList);
-
-        });
-
-    }else{
-
-        getProductos()
-        .then(products => {
-
-          const productList = <ItemList products={products} plantilla={'item'}/>;
-          setproductos(productList);
-
-        });
-
-    }
 
   }, [idCategoria]);
 
