@@ -11,12 +11,11 @@ export const CarritoProvider = (props) => {
   //Si existe producto en el carrito
   const isInCart = (id) => {
     //Si existe, me lo devuelve. Si no existe, me retorna undefined
-    return carrito.find((prod) => prod.id === id);
+    return carrito.find( prod => prod.id === id);
   };
 
   //Agregar producto
   const addItem = (producto, cantidad) => {
-    
     if (isInCart(producto.id)) {
       //Reemplazo la cantidad de productos
       const indice = carrito.findIndex((prod) => prod.id === producto.id);
@@ -29,7 +28,7 @@ export const CarritoProvider = (props) => {
         ...producto,
         cant: cantidad,
       };
-     
+
       setCarrito([...carrito, prodCart]);
     }
   };

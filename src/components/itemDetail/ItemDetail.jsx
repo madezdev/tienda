@@ -1,11 +1,16 @@
 import { ItemCount } from "../itemCount/ItemCount";
+import { useCarritoContext } from "../../context/CarritoContext";
 
 //Plantilla del producto
 export const ItemDetail = ({ item }) => {
   
+
+  const { addItem } = useCarritoContext();
+
   const onAdd = (cantidad) => {
-    console.log(cantidad);
+    addItem(item,cantidad);
   };
+  console.log(onAdd);
 
   return (
     <div className="detalle">
@@ -28,7 +33,7 @@ export const ItemDetail = ({ item }) => {
           <ItemCount valInicial={1} stock={item.stock} onAdd={onAdd} />
         </div>
 
-        <button className="detalle__comprar">Agregar al carrito</button>
+        
       </div>
     </div>
   );

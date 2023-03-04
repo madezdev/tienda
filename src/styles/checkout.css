@@ -1,0 +1,74 @@
+
+.checkout__from{
+    
+/* 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: auto;
+    overflow: auto;
+     */
+}
+.formulario{
+    margin: 0 auto;
+    max-width: 80rem;
+}
+.formulario fieldset {
+    border: 2px solid var(--primary);
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+ }
+ .formulario legend {
+    
+    color: var(--primary);
+    border-radius: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+}
+
+.checkout__label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+.form-label{
+    flex-basis: 20rem;
+}
+input{
+    width: 40rem;
+    padding: 0.5rem;
+}
+.checkout__input{
+   border-radius: 0.8r;
+}
+
+::placeholder{
+    color: grey;
+    font-size: 1.4rem;
+}
+
+.checkout__sumit{
+    text-align: center;
+}
+.btnFinalizar{
+    margin-top: 2rem ;
+    
+    border: 2px solid var(--primary);
+    background-color: var(--blanco);
+    color: var(--primary);
+    
+}
+
+.btnFinalizar:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}

@@ -25,7 +25,7 @@ export const NavBar = () => {
         
           <Categorias/>
         
-        <CartWidget cantCarrito={0} />
+        <CartWidget/>
       </nav>
     </>
   );
