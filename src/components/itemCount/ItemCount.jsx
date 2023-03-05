@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 
@@ -24,6 +25,9 @@ export const ItemCount = ({valInicial, stock, onAdd}) => {
         <button className="producto__count" onClick={() => sumar()}>+</button>
         <button className="detalle__comprar"onClick={() => agregarCarrito() }>Agregar al carrito</button>
         
+        <Link to={"/"}>
+            <button className="cart__btnContinuar btn" style={{marginTop:'1rem'}}>Continuar comprando</button>
+        </Link>
     </>
   )
 }

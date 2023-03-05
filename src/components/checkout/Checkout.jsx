@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { Error } from "../error/Error";
 import { useForm } from "react-hook-form";
 import { useCarritoContext } from "../../context/CarritoContext";
 import {
@@ -15,21 +17,37 @@ import "../../styles/checkout.css";
 
 export const Checkout = () => {
   
-  const { carrito, emptyCart, totalPrice } = useCarritoContext();
-  const datosFormulario = React.useRef();
+  const [nombreApellido, setNombreApellido] = useState('')
+  const [email, setEmail] = useState('')
+  const [RepetirEmail, setRepetirEmail] = useState('')
+  const [telefono, setTelefono] = useState('')
+  const [direccion, setDireccion] = useState('')
+  const [cp, setCp] = useState('')
+  const [error, setError] = useState(false)
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const { carrito, emptyCart, totalPrice } = useCarritoContext();
+  const datosFormulario = React.useRef(); //Creo la referencia
+
 
   let navigate = useNavigate();
 
   const consultarFormulario = (e) => {
     e.preventDefault();
+    
+    //validacion del Formulario
+    if([ nombreApellido, email, RepetirEmail, telefono, direccion, cp].includes('')){
+      console.log('Hay al menos un campo vacio');
+      setError(true)
+      return;
+    }
+    if (email !== RepetirEmail) {
+      console.log('No coinciden los email');
+      setRepetirEmail('')
+      setError(true)
+      return;
+    }
+    setError(false)
+
     const datForm = new FormData(datosFormulario.current);
     const cliente = Object.fromEntries(datForm);
 
@@ -51,14 +69,23 @@ export const Checkout = () => {
       toast.success(
         `¡Muchas gracias por comprar con nosotros!, su orden de compra con el ID: ${
           ordenCompra.id
-        } por un total de $ ${new Intl.NumberFormat("de-DE").format(
-          totalPrice()
-        )} fue realizada con exito`
+        } por un total de $ ${new Intl.NumberFormat("de-DE").format(totalPrice())
+      } fue realizada con exito`,{
+        position: "top-center",
+        autoClose: false,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        }
       );
       emptyCart();
       e.target.reset();
       navigate("/");
     });
+    
   };
 
   return (
@@ -80,7 +107,12 @@ export const Checkout = () => {
             className="formulario"
             onSubmit={consultarFormulario}
             ref={datosFormulario}>
-
+          
+          {error && (
+          <Error>
+            <p>Todos los campos son obligatorios</p>
+          </Error>
+        )}
             <fieldset>
               <legend>Datos personales</legend>
 
@@ -89,10 +121,12 @@ export const Checkout = () => {
                   Nombre y Apellido
                 </label>
                 <input
-                  type="text"
                   className="checkout__input"
-                  name="nombre"
+                  id="nombre"
+                  type="text"
                   placeholder="Ingresa nombre y apellido"
+                  value={nombreApellido}
+                  onChange={(e) => setNombreApellido(e.target.value)}
                 />
               </div>
 
@@ -100,7 +134,16 @@ export const Checkout = () => {
                 <label htmlFor="email" className="form-label">
                   Email
                 </label>
-                <input type="email" className="checkout__input" name="email" placeholder="Ingresa tu email" />
+                <input 
+                className="checkout__input" 
+                id="email"
+                type="email" 
+                name="email" 
+                placeholder="Ingresa tu email" 
+                
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
 
               <div className="checkout__label email">
@@ -108,10 +151,14 @@ export const Checkout = () => {
                   Repetir Email
                 </label>
                 <input
-                  type="email"
                   className="checkout__input"
+                  id="repEmail"
+                  type="email"
                   name="repEmail"
                   placeholder="Repetir email"
+                  
+                  value={RepetirEmail}
+                  onChange={(e) => setRepetirEmail(e.target.value)}
                 />
               </div>
 
@@ -120,10 +167,14 @@ export const Checkout = () => {
                   Número de contacto
                 </label>
                 <input
-                  type="text"
                   className="checkout__input"
+                  id="celular"
+                  type="text"
                   name="celular"
                   placeholder="Ingresa tu teléfono"
+                  pattern="[0-9]{2}[0-9]{4}[0-9]{4}" 
+                  value={telefono}
+                  onChange={(e) => setTelefono(e.target.value)}
                 />
               </div>
 
@@ -132,10 +183,13 @@ export const Checkout = () => {
                   Direccion de destino
                 </label>
                 <input
-                  type="text"
                   className="checkout__input"
+                  id="direccion"
+                  type="text"
                   name="direccion"
                   placeholder="Ingresa una dirección"
+                  value={direccion}
+                  onChange={(e) => setDireccion(e.target.value)}
                 />
               </div>
 
@@ -143,7 +197,15 @@ export const Checkout = () => {
                 <label htmlFor="cp" className="form-label">
                   Código Postal
                 </label>
-                <input type="text" className="checkout__input" name="cp" placeholder="Ingresa el CP de tu domicilio"/>
+                <input 
+                className="checkout__input"
+                id="cp" 
+                type="text" 
+                name="cp" 
+                placeholder="Ingresa el CP de tu domicilio"
+                value={cp}
+                onChange={(e) => setCp(e.target.value)}
+                />
               </div>
 
               <div className="checkout__sumit">

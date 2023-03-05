@@ -1,17 +1,4 @@
 
-.checkout__from{
-    
-/* 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: auto;
-    overflow: auto;
-     */
-}
 .formulario{
     margin: 0 auto;
     max-width: 80rem;

@@ -13,10 +13,10 @@ export const Cart = ( ) => {
     <>
       {carrito.length === 0 ? (
         <>
-          <div className="cart__contenedor">
+          <div className="cart__contenedorVacio">
             <h2 className="cart__heading">Carrito de compras vacio</h2>
-            <Link className="cart__continuar--btn" to={"/"}>
-              Continuar comprando
+            <Link  to={"/"}>
+            <button className="cart__btnContinuar btn">Continuar comprando</button>
             </Link>
           </div>
         </>
@@ -39,14 +39,14 @@ export const Cart = ( ) => {
             <div className="cart__botones">
              
               <Link to={"/checkout"}>
-                <button className="cart__btnFinalizar btn">Finalizar compra</button>
+                <button className="cart__btnFinalizar btn">Realizar compra</button>
               </Link>
 
               <Link to={"/"}>
                 <button className="cart__btnContinuar btn">Continuar comprando</button>
               </Link>
 
-              <Link to={"/cart"}>
+              <Link to={"/cart "}>
               <button 
               className="cart__btnVaciar btn"
               onClick={() => emptyCart()}

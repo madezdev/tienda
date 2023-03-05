@@ -28,6 +28,7 @@ export const ItemCart = ({ item }) => {
             Subtotal: $
             {new Intl.NumberFormat("de-DE").format(item.precio * item.cant)}
           </p>
+          
         <button
           className="itemCart__btnEliminar"
           onClick={() => removeItem(item.id)}>
